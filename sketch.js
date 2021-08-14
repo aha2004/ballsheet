@@ -124,7 +124,7 @@ function setup() {
   frameRate(1960);
   TARGETCOLOR = color(255,0,0);
   BACKGROUNDCOLOR = color(7,7,7);
-  MOUSECOLOR = color(255,255,255);
+  MOUSECOLOR = color(0,0,255);
   BLACK = color(0,0,0);
 	
 console.log('new2');
