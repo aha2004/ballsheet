@@ -121,7 +121,7 @@ function preload()
 let cnv;
 let ctx;
 function setup() {
-  frameRate(2240);
+  frameRate(2160);
   TARGETCOLOR = color(255,0,0);
   BACKGROUNDCOLOR = color(7,7,7);
   MOUSECOLOR = color(255,255,255);
@@ -401,8 +401,8 @@ function textThings()
    textStyle(BOLD);
    text("BallSheet by dphdmn",W/2,H-H/12);
    textSize(25);
-   fill(0,255,0, alpha);
-   text("ayaya",W/2,H-H/25);
+   fill(250,150,200, alpha);
+   text("v6.8 no right click",W/2,H-H/25);
    
    fill(200-balance,balance*3+150,0, alpha);
    text(balance.toFixed(0),W/2,H-H/7);
@@ -457,7 +457,7 @@ function makeBalls()
   }
   else
   {
-    fill(255,255,0);
+    fill(250,150,200);
   }
   ellipse(xpos, ypos, BALLSIZE, BALLSIZE);
 }
