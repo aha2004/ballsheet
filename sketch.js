@@ -115,16 +115,16 @@ function preload()
     ballsHS = getItem(6)/1000;   
    }
 
-  eatsound = loadSound("bop.mp3");
+  eatsound = loadSound("idk.wav");
 }
 
 let cnv;
 let ctx;
 function setup() {
-  frameRate(1960);
+  frameRate(2160);
   TARGETCOLOR = color(255,0,0);
   BACKGROUNDCOLOR = color(7,7,7);
-  MOUSECOLOR = color(0,0,255);
+  MOUSECOLOR = color(255,255,255);
   BLACK = color(0,0,0);
 	
 console.log('new2');
@@ -401,8 +401,8 @@ function textThings()
    textStyle(BOLD);
    text("BallSheet by dphdmn",W/2,H-H/12);
    textSize(25);
-   fill(250,150,200, alpha);
-   text("v6.8 no right click",W/2,H-H/25);
+   fill(0,255,0, alpha);
+   text("ayaya",W/2,H-H/25);
    
    fill(200-balance,balance*3+150,0, alpha);
    text(balance.toFixed(0),W/2,H-H/7);
