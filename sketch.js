@@ -1,4 +1,4 @@
-let cheesConst = 2; //irrelevant
+elet cheesConst = 2; //irrelevant
 let bps;
 let outlierconst = 0.07;
 let newr = []
@@ -26,7 +26,7 @@ let overall = 0;
 let EPSRANGE = 5;
 let W = 800;
 let H = 800;
-let BALLSIZE = 30;
+let BALLSIZE = 1;
 let CURSORSIZE = 800;
 let time;
 let score;
