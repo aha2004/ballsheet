@@ -1,3 +1,4 @@
+let cheesConst = 2; //irrelevant
 let bps;
 let outlierconst = 0.07;
 let newr = []
@@ -14,7 +15,7 @@ let reactionHS = 9999;
 let bpsHS = 0;
 let eatenHS = 0;
 let maxepsHS = 0;
-let PRESSURE = 60;
+let PRESSURE = 40;
 let ballcounter;
 let timedif = 0;
 let reactions = [];
@@ -33,7 +34,7 @@ let xpos = H/2;
 let ypos = W/2;
 let scorePressure = 1;
 let newdist = 0;
-let scorePrise = 35;
+let scorePrise = 40;
 let highScore = 0;
 let eps = 0;
 let ingame = true;
@@ -53,7 +54,7 @@ let BLACK;
 
 let eatsound;
 
-let newCursor=true;
+let newCursor=false;
 
 function gameSetup()
 { 
@@ -135,9 +136,8 @@ console.log('new2');
   preserveDrawingBuffer: true
 });
 
-	document.oncontextmenu = function() { return false; }
-  document.onmousedown   = function() { return false; }
-  cursor('cursor.cur', 32, 32);//noCursor();
+	
+  noCursor();
   textSize(30);
   textAlign(CENTER,CENTER);
   
@@ -399,10 +399,10 @@ function textThings()
    fill(0,255,230, alpha);
    textSize(30);
    textStyle(BOLD);
-   text("BallSheet by dphdmn",W/2,H-H/12);
+   text("SmallBalls by dphdmn",W/2,H-H/12);
    textSize(25);
    fill(250,150,200, alpha);
-   text("copege",W/2,H-H/25);
+   text("v6.969 Hard",W/2,H-H/25);
    
    fill(200-balance,balance*3+150,0, alpha);
    text(balance.toFixed(0),W/2,H-H/7);
@@ -457,7 +457,7 @@ function makeBalls()
   }
   else
   {
-    fill(0,255,0);
+    fill(250,150,200);
   }
   ellipse(xpos, ypos, BALLSIZE, BALLSIZE);
 }
@@ -493,9 +493,9 @@ function checkCollision()
     reactions.push(r);
      
     let cost = scorePrise;
-     if (r < 100)
+     if (r < cheesConst)
      {
-       cost = cost * (r/100);
+       cost = cost * (r/cheesConst);
      }
     ballcounter++;
     score+= cost;
