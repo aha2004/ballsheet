@@ -1,4 +1,4 @@
-elet cheesConst = 2; //irrelevant
+let cheesConst = 2; //irrelevant
 let bps;
 let outlierconst = 0.07;
 let newr = []
@@ -26,7 +26,7 @@ let overall = 0;
 let EPSRANGE = 5;
 let W = 800;
 let H = 800;
-let BALLSIZE = 200;
+let BALLSIZE = 300;
 let CURSORSIZE = 300;
 let time;
 let score;
@@ -122,7 +122,7 @@ function preload()
 let cnv;
 let ctx;
 function setup() {
-  frameRate(2340);
+  frameRate(1000);
   TARGETCOLOR = color(255,0,0);
   BACKGROUNDCOLOR = color(7,7,7);
   MOUSECOLOR = color(255,255,255);
