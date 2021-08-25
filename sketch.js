@@ -27,7 +27,7 @@ let EPSRANGE = 5;
 let W = 800;
 let H = 800;
 let BALLSIZE = 200;
-let CURSORSIZE = 300;
+let CURSORSIZE = 200;
 let time;
 let score;
 let xpos = H/2;
