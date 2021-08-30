@@ -116,7 +116,7 @@ function preload()
     ballsHS = getItem(6)/1000;   
    }
 
-  eatsound = loadSound("idk.wav");
+  eatsound = loadSound("bop.mp3a");
 }
 
 let cnv;
